@@ -38,6 +38,7 @@ if __name__ == "__main__":
         install_requires=open("./requirements.txt", "r", encoding="utf-8").read().splitlines(),
         long_description=open("./README.md", "r", encoding="utf-8").read(),
         long_description_content_type='text/markdown',
+        setup_requires=["setuptools>=70.0.0"],
         zip_safe=True,
         classifiers=[
             "Programming Language :: Python :: 3",
